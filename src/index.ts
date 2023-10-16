@@ -1,3 +1,5 @@
-import { sayHello } from "./component/something";
+import somethingHtml from "./nested/something.html";
 
-sayHello();
+export function htmlTest() {
+  return somethingHtml;
+}

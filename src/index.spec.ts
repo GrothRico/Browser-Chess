@@ -1,5 +1,7 @@
+import { htmlTest } from ".";
+
 describe("something", () => {
   it("should pass", () => {
-    expect(true).toBeFalsy();
+    expect(htmlTest()).toEqual("<h1>Hello, world!</h1>");
   });
 });
