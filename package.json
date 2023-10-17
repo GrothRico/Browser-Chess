@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "jest"
+    "test": "npm run build && jest",
+    "exec": "node dist/bundle.js",
+    "all": "npm run build && npm run test && npm run exec"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.5",
     "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
     "jest": "^29.7.0",
     "jest-html-loader": "^1.0.0",
     "ts-jest": "^29.1.1",
